@@ -1,69 +1,97 @@
 html *{
-    color: aliceblue;
-    background-color:black;
+    color: rgb(0, 11, 137);
+    background-color:rgb(244, 255, 240);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Courier New', Courier, monospace;
-}
+    font-family: cursive;
 
+  }
+body{
+  padding:10px;
+  padding-bottom: 100px;
+}
 .heading{
-    font-size: 44px;
-    color: aliceblue;
-    text-align: center;
-    margin-bottom: 30px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(114, 0, 132);
+    margin-top: 10px;
+    font-size: 42px;
     font-weight: 600;
-    border: rgb(0, 0, 0);
-    border-style:dashed;
+    text-align: center;
+    border: rgb(255, 255, 255);
+    border-style:dotted;
     border-width: 10px;
-    border-top-color: rgb(254, 255, 178);
-    border-bottom-color: rgb(206, 235, 255);
-    padding: 10px;
+    border-top-color: rgb(251, 255, 43);
+    border-bottom-color: rgb(62, 178, 255);
+    padding: 15px;
+    margin-bottom: 30px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.intro{
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
 
 .container {
-    width: 500px;
+    padding-left: 20%;
+    padding-right: 20%;
     clear: both;
+    height: 100%;
   }
   
-  .container input {
-    width: 100%;
-    clear: both;
-  }
+.container input {
+  appearance: none;
+  outline: none;
+  background: rgb(255, 255, 255);
+  border: black;
+  border-radius: 50%;
+  border-color: rgb(255, 255, 255);
+  border-width: 2px;
+  border-style: solid;
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 20px;
+  margin-right: 35px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.convert{
+  width: 75%;
+
+}
+
+.col1{
+  padding-left: 20px;
+}
+
+.items{
+  margin-bottom: 20px;
+}
+
+.sub{
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+.footer1{
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 65px;
+  background-color: white;
+  color: black;
+}
+
+label{
+  color: rgb(0, 0, 0);
+  padding-bottom: 5px;
+}
+
+input::placeholder{
+  color:rgb(3, 208, 119);
+}
