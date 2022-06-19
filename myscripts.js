@@ -11,7 +11,7 @@ for (let i =0;i< inputs.length; i++){
             let value = e.target.value;
             switch (e.target.name) {
                 case "celsius":
-                    fahrenheitInput.value = (value * (9/5) + 32);
+                    fahrenheitInput.value = (parseInt(value) * (9/5) + 32);
                     kelvinInput.value = parseInt(value) + 273.15;
                     break;
                 case "fahrenheit":
