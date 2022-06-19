@@ -1,6 +1,6 @@
 const celsiusInput = document.getElementById("celsius");
 const fahrenheitInput = document.getElementById("fahrenheit");
-const kelvin = document.getElementById("kelvin");
+const kelvinInput = document.getElementById("kelvin");
 
 const inputs = document.getElementsByClassName("input");
 
@@ -9,7 +9,29 @@ for (let i =0;i< inputs.length; i++){
 
         input.addEventListener("input", function(e){
             let value = e.target.value;
-            console.log(e.target.name + ":" + value);
+            switch (e.target.name) {
+                case "celsius":
+                    fahrenheitInput.value = (value * (9/5) + 32);
+                    kelvinInput.value = parseInt(value) + 273.15;
+                    break;
+                case "fahrenheit":
+                    celsiusInput.value = (parseInt(value)-32) * (5/9);
+                    kelvinInput.value = (parseInt(value)-32) * (5/9) + 273.15;
+                    break;
+                case "kelvin":   
+                    fahrenheitInput.value = (parseInt(value)-273.15) * (9/5) + 32;
+                    celsiusInput.value = parseInt(value) - 273.15;
+                    break;
+                default:
+                    console.log("Error!")
+                    break;
+            }
         });
 
+        function refreshInput(){
+            celsiusInput.value = null;
+            fahrenheitInput.value = null;
+            kelvinInput.value = null;
+        }
 }
+
